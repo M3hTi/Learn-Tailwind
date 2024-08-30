@@ -1,0 +1,4 @@
+@echo off
+C:
+cd C:\TailWind\Topic2
+npm run build
