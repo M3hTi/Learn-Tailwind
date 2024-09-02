@@ -132,10 +132,17 @@
             </figure>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="#contact" class="my-12 scroll-mt-20 p6">
+        <section id="contact" class="my-12 scroll-mt-20 p6">
             <h2 class="mb-6 text-center text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white">
                 Contact Us
             </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" minlength="3" maxlength="60" placeholder="Your subject" required class="w-full rounded-3xl text-2xl sm:text-3xl p-3 text-black border border-solid border-slate-800 dark:border-none">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"   required class="w-full rounded-3xl text-2xl sm:text-3xl p-3 text-black border border-solid border-slate-800 dark:border-none"></textarea>
+                <button class="bg-yellow-500 p-3 rounded-xl hover:bg-yellow-400 active:bg-yellow-300 text-white border border-solid border-slate-900 dark:border-none w-48">Submit</button>
+            </form>
         </section>
     </main>
 </body>
