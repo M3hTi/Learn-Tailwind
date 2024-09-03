@@ -13,13 +13,25 @@
                 <a href="#top">🚀Acme Rockets</a>
             </h1>
             <div>
-                <button class="text-3xl md:hidden cursor-pointer ">&#9776;</button>
+                <button id="hamburger-icon" class="text-3xl md:hidden cursor-pointer hover:opacity-90">&#9776;</button>
                 <nav class="hidden md:block space-x-8 text-xl">
                     <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
                     <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
                 </nav>
             </div>
+        </section>
+        <section id="mobile-menu" class="absolute top-0 bg-black w-full  flex-col text-5xl justify-center origin-top  hidden">
+           <button id="close" class="text-8xl self-end px-6 hover:opacity-90">
+                &times;
+           </button>
+           <nav class="flex flex-col items-center min-h-screen">
+                <a href="#top" class="w-full text-center py-6 hover:opacity-90 moile-links">Home</a>
+                <a href="#rockets" class="w-full text-center py-6 hover:opacity-90 moile-links">Our Rockets</a>
+                <a href="#testimonials" class="hover:opacity-90 w-full text-center py-6 moile-links">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90 w-full text-center py-6 moile-links">Contact Us</a>
+                <a href="#footer" class="w-full py-6 text-center hover:opacity-90 moile-links">Legal</a>
+           </nav>
         </section>
     </header>
     <main class="max-w-4xl mx-auto">
@@ -145,7 +157,7 @@
             </form>
         </section>
     </main>
-    <footer class="bg-yellow-500 text-xl text-black dark:text-white">
+    <footer id="footer" class="bg-yellow-500 text-xl text-black dark:text-white">
         <section class="max-w-4xl mx-auto flex flex-col sm:flex-row sm:justify-between p-4">
             <address>
                 <h2>Acme Rocket-Power Products, Inc.</h2>
